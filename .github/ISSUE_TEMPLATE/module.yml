@@ -1,0 +1,35 @@
+name: Module Request
+description: Create a new Laravel module
+title: "[MODULE] "
+labels: ["module"]
+body:
+  - type: input
+    id: module_name
+    attributes:
+      label: Module Name
+      placeholder: Product
+    validations:
+      required: true
+
+  - type: textarea
+    id: fields
+    attributes:
+      label: Fields (JSON format)
+      placeholder: |
+        [
+          {"name": "title", "type": "string"},
+          {"name": "price", "type": "decimal"},
+          {"name": "description", "type": "text"}
+        ]
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Features
+      options:
+        - label: CRUD
+        - label: API
+        - label: Validation
+        - label: Pagination
