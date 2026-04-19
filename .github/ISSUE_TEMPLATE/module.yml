@@ -38,6 +38,25 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: relations
+    attributes:
+      label: Relations (JSON format)
+      description: Isi relasi master-detail dalam format JSON array
+      placeholder: |
+        [
+          {
+            "type": "belongsTo",
+            "module": "Category",
+            "foreign_key": "category_id",
+            "name": "category",
+            "label_column": "category_name"
+          }
+        ]
+      render: json
+    validations:
+      required: false
+
   - type: checkboxes
     id: features
     attributes:
