@@ -11,6 +11,19 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: group
+    attributes:
+      label: Group
+      description: Pilih kelompok menu untuk sidebar
+      options:
+        - Admin
+        - Transaksi
+        - Laporan
+      default: 0
+    validations:
+      required: true
+
   - type: textarea
     id: fields
     attributes:
@@ -21,6 +34,7 @@ body:
           {"name": "price", "type": "decimal"},
           {"name": "description", "type": "text"}
         ]
+      render: json
     validations:
       required: true
 
