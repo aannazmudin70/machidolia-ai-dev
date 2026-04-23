@@ -20,9 +20,11 @@ body:
         - Admin
         - Transaksi
         - Laporan
+        - Dashboard  # <--- Pastikan ini sudah ada
       default: 0
     validations:
       required: true
+
       
   - type: dropdown
     id: ui_style
