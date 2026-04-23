@@ -23,6 +23,19 @@ body:
       default: 0
     validations:
       required: true
+      
+  - type: dropdown
+    id: ui_style
+    attributes:
+      label: UI Style
+      description: Pilih tampilan UI yang ingin dihasilkan
+      options:
+        - Modern (Tailwind)
+        - Classic (Bootstrap)
+        - Dashboard V2 (Glassmorphism)
+      default: 0
+    validations:
+      required: true
 
   - type: textarea
     id: fields
