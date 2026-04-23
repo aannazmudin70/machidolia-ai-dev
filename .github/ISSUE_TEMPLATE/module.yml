@@ -29,13 +29,14 @@ body:
     attributes:
       label: UI Style
       description: Pilih tampilan UI yang ingin dihasilkan
-        options:
-            - Modern (Tailwind)
-            - Classic (Bootstrap)
-            - Dashboard V2 (Glassmorphism)
-            - Midnight Neon (Futuristic Dark)
-            - Neumorphism (Soft UI)
-            - Minimalist White (Clean)
+      options:
+        - Modern (Tailwind)
+        - Classic (Bootstrap)
+        - Dashboard V2 (Glassmorphism)
+        - Midnight Neon (Futuristic Dark)
+        - Neumorphism (Soft UI)
+        - Minimalist White (Clean)
+
 
       default: 0
     validations:
